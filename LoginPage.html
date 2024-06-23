@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="LoginPage.css"> 
+    <title>Login Page</title>
+    <script src="LoginPage.js"></script>
+</head>
+
+<body>
+    <div class="container" id="container">
+        <div class="form-container sign-in">
+            <form action="LoginPage.php" method="POST" onsubmit="return validate()">
+                <h1>LOGIN</h1>
+                <input type="text" name="txtname" id="txtname" placeholder="Username" required>
+                <input type="password" name="txtpwd" id="txtpwd" placeholder="Password" required>
+                <a onclick="alert('Email has been sent!\n**Check your inbox**');">Forgot Your Password?</a>
+                <button type="submit" onclick="validate();">Sign-In</button>
+                <button type="reset">Clear</button>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-right">
+                    <h1>Hello, Students!</h1>
+                    <p>Register with your personal details if you don't have an account</p>
+                    <button class="hidden" id="register" onclick="window.open('SignUp.html')">Click Here</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
